@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    font-size: 15px;
+    font-family:'Lexend Deca', sans-serif;
+}
+
+
+body{
+    background-color:hsla(0, 0%, 100%, 0.75) ;
+}
+
+
+
+nav{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+nav a, h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 4% 0% 4% 0%;
+    color: hsl(0, 0%, 95%);
+}
+
+nav a{
+    font-size: 40px;
+}
+
+
+nav a:hover{
+    color: hsl(0, 4%, 72%)
+}
+
+#mainFlex{
+    display: flex;
+    margin: 10% 20%;
+    
+}
+
+#mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10% 20%;
+}
+
+
+#mainFlex div{
+    border-radius: 5px;
+    padding: 5%;
+}
+
+#mainGrid div{
+    border-radius: 5px;
+    padding: 15%;
+}
+
+#sedanContainer, #sedanGridContainer{
+    background-color: hsl(31, 77%, 52%);
+}
+
+
+#SUVsContainer, #SUVsGridContainer{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxuryContainer, #luxuryGridContainer{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+}
+
+
+#sedanBtn{
+    color: hsl(31, 77%, 52%);
+}
+
+#suvBtn{
+color: hsl(184, 100%, 22%);
+}
+
+#luxuryBtn{
+color: hsl(179, 100%, 13%);
+}
+
+#sedanBtn:hover, #suvBtn:hover, #luxuryBtn:hover {
+
+    color: hsl(0, 0%, 95%);
+}
+
+
+
+button{
+    width: 60%;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 25%;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* mobile version begins here*/
+
+@media screen and (max-width:800px) {
+    *{
+        font-size: small;
+    }
+
+    #mainFlex{
+        flex-direction: column;
+        margin-top: 12%;
+    }
+
+    #mainGrid{
+        grid-template-columns: auto;
+    }
+
+
+    #mainFlex div, #mainGrid div {
+        padding: 10%;
+    }
+
+    nav a, h1{
+        font-size: x-large;
+    }
+
+    button{
+        height: 40px;
+        margin: 15% ;
+    }
+}
