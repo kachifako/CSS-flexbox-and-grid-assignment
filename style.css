@@ -44,33 +44,23 @@ nav a:hover{
     
 }
 
-#mainGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10% 20%;
-}
-
 
 #mainFlex div{
     border-radius: 5px;
     padding: 5%;
 }
 
-#mainGrid div{
-    border-radius: 5px;
-    padding: 15%;
-}
 
-#sedanContainer, #sedanGridContainer{
+#sedanContainer{
     background-color: hsl(31, 77%, 52%);
 }
 
 
-#SUVsContainer, #SUVsGridContainer{
+#SUVsContainer{
     background-color: hsl(184, 100%, 22%);
 }
 
-#luxuryContainer, #luxuryGridContainer{
+#luxuryContainer{
     background-color: hsl(179, 100%, 13%);
 }
 
@@ -101,7 +91,7 @@ color: hsl(179, 100%, 13%);
 
 
 button{
-    width: 60%;
+    width: 65%;
     height: 45px;
     border: none;
     border-radius: 40px;
@@ -118,7 +108,81 @@ button:hover{
 
 footer{
     text-align: center;
+    margin-bottom: 4%;
 }
+
+
+
+
+
+            /* grid rules begin here*/
+
+#gridBody{
+    background-color: black;
+}
+
+
+#container{
+    display: inline-grid;
+    gap: 20px;
+    background-color: black;
+    margin: 13%;
+    padding: 40px;
+    width: 1000px;
+    height: 700px;
+    grid-template-areas: 
+        'orange orange orange orange orange orange yellow yellow yellow'
+        'orange orange orange orange orange orange yellow yellow yellow'
+        'orange orange orange orange orange orange yellow yellow yellow'
+        'orange orange orange orange orange orange yellow yellow yellow'
+        'green green green green smallblue smallblue smallblue smallblue smallblue'
+        'green green green green smallblue smallblue smallblue smallblue smallblue'
+        'green green green green bigblue bigblue bigblue bigblue bigblue'
+        'green green green green bigblue bigblue bigblue bigblue bigblue'
+        'green green green green bigblue bigblue bigblue bigblue bigblue'
+} 
+
+       
+
+#orange{
+    background-color: #ff4500;
+    grid-area: orange; 
+   
+    
+}
+
+#yellow{
+    background-color: goldenrod;
+    grid-area: yellow;
+   
+}
+
+#green{
+    background-color: green;
+    grid-area: green;
+    
+}
+
+#smallBlue{
+    background-color: steelblue;
+    grid-area: smallblue;
+   
+}
+
+#bigBlue{
+    background-color: steelblue ;
+    grid-area: bigblue;
+    
+}
+
+#gridFooter{
+    color: beige;
+}
+
+
+
+
+
 
 
 
