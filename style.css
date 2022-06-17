@@ -195,6 +195,8 @@ footer{
 /* mobile version begins here*/
 
 @media screen and (max-width:800px) {
+
+
     *{
         font-size: small;
     }
@@ -204,12 +206,8 @@ footer{
         margin-top: 12%;
     }
 
-    #mainGrid{
-        grid-template-columns: auto;
-    }
 
-
-    #mainFlex div, #mainGrid div {
+    #mainFlex div{
         padding: 10%;
     }
 
@@ -221,4 +219,18 @@ footer{
         height: 40px;
         margin: 15% ;
     }
+
+    
+    #container{
+        width: 90%;
+        height: auto;
+        gap: 10px;
+        padding: 0%;
+        margin: 15% 5% 100% 5%;
+        
+    }
+
+
+
+
 }
